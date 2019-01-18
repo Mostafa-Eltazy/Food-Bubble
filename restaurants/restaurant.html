@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Foodbubble | Gilmore & Co.</title>
+    <meta charset="utf-8">
+    <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel='shortcut icon' type='image/x-icon' href='../images/Bubble.ico' />
+  </head>
+
+  <body id="top"style = " opacity:0;">
+    <!-- Header Area -->
+    <div class="bgded overlay" style="background-image:url('../images/backgrounds/header_bg.jpg');"> 
+
+      <div class="wrapper">
+        <header id="header" class="hoc clear">
+          <div id="logo"> 
+            <div class="logo-img">
+              <img src="../images/logo.png" class = "ballKick">
+                          <br><br>
+            </div>
+            <h1><a href="../index.html">Foodbubble</a></h1>
+          </div>
+          <nav id="mainav" class="clear"> 
+            <ul class="clear">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active"><a class="drop" href="#">Restaurants</a>
+                <ul>
+                  <li><a href="romantic.html">Romantic</a></li>
+                  <li><a href="outgoing.html">Outgoing</a></li>
+                  <li><a href="family.html">Family</a></li>
+                  <li><a href="exotic.html">Exotic</a></li>
+                </ul>
+              </li>
+              <li><a href="../aboutus.html">About & Contact Us</a></li>
+              <li><a href="../signin.html">Sign In</a></li>
+              <li><a href="../signup.html">Sign Up</a></li>
+              <li><a href="../account.html">My Account</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div class="wrapper row3">
+      <main class="hoc container clear">
+
+        <div class="center btmspace-50">
+          <h2 class="heading blue-heading">Gilmore & Co.</h2>
+          <p class="nospace">The best restaurant in town for seafood!</p>
+        </div>
+
+        <div class="content">
+
+          <div class="group btmspace-30">
+
+              <div class="one_half first">
+                  <h3>Restaurant Menu</h3>
+                  
+                  <div class="btmspace-15">
+                    <img class="restaurant-gallery" src="../images/restaurants/1.jpg" width=80% height=80%>
+                    <img class="restaurant-gallery" src="../images/restaurants/2.jpg" width=80% height=80%>
+					<img class="restaurant-gallery" src="../images/restaurants/3.jpg" width=80% height=80%>
+                    <img class="restaurant-gallery" src="../images/restaurants/4.jpg" width=80% height=80%>
+					
+                  </div>
+
+                  <div>
+                    <button class="btn medium" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="btn medium" onclick="plusDivs(+1)">&#10095;</button>
+                  </div>
+
+              </div>
+              <div class="one_half">
+
+              <div class="one_half">
+                <h3>Restaurant  Information</h3>
+                <p><span class="restaurant-list-icon"><i class="fa fa-map-marker"></i></span>Address: 9th St., Maadi, Cairo</p>
+                <p><span class="restaurant-list-icon"><i class="fa fa-heart"></i></span>Category: Family</p>
+                
+                  
+<div class="stars">
+
+
+
+  <form action="">
+    <input class="star star-5" id="star-5" type="radio" name="star"/>
+    <label class="star star-5" for="star-5"></label>
+	
+    <input class="star star-4" id="star-4" type="radio" name="star"/>
+    <label class="star star-4" for="star-4"></label>
+	
+    <input class="star star-3" id="star-3" type="radio" name="star"/>
+    <label class="star star-3" for="star-3"></label>
+	
+    <input class="star star-2" id="star-2" type="radio" name="star"/>
+    <label class="star star-2" for="star-2"></label>
+	
+    <input class="star star-1" id="star-1" type="radio" name="star"/>
+    <label class="star star-1" for="star-1"></label>
+  </form>
+</div>
+	
+                  <p id = "StarScore">Users Rate: </p>
+
+                  
+                  
+                  <p>Price Range: $$</p>
+
+              </div>
+
+              </div>
+            </div>
+             <div style = "display: inline-block;">
+                 <div  id="showreservationpanel"></div> <div  id="showreservationpanelSMALL"></div><div  id="showreservationpanelSMALL2"></div>
+                </div>
+<br>
+            <div id="reservationpanel" style = "opacity: 0;">
+                <h3>Please fill in the reservation details</h3>
+				<form name="reservationForm" method="post" onsubmit="return validateReservationForm()">
+                    <div>
+						<div class="one_third first">
+							<label>Restaurant Name: </label>
+							<label for="restaurantName" style="font-size: 15pt;">Gilmore & Co </label>
+							
+						</div>
+						<div class="one_third">
+							<label for="NameOfReservation">Reservation For: <span>*</span></label>
+							<input type="text" name="Name" placeholder="Your Name" required>
+						</div>
+                        <div class="one_third">
+							<label for="table-type">Table Type </label>
+                            
+                        <div class = "RADIO" style = "padding-top: 4%;">
+
+                          <input type="radio" name="TableType" value="any" checked><span> Any Table</span> <br><br>
+                          <input type="radio" name="TableType" value="window"><span>Window Table</span><br><br>
+                          <input type="radio" name="TableType" value="vip"><span>VIP Table</span>
+                        </div>
+
+                     
+
+                        
+						</div>
+                        
+					</div>
+                    <br> <br><br><br>
+                    
+					<div>
+						<div class="one_third first">
+							<label for="day">Day <span>*</span></label>
+							<input type="date" name="day"  required>
+						</div>
+						<div class="one_third">
+							<label for="time">Time <span>*</span></label>
+							<input type="time" name="time"  required>
+						</div>
+						  
+					</div>
+                    <br><br><br><br>
+                    <br><br><br><br>
+                    
+					<div>
+						<div class="one_third first">
+							<br>
+							<label for="people">Number of people <span>*</span></label>
+							<input type="number" name="people" id = "numOfPeople"  min="1" max="30" required> 
+						</div>
+						<div class="one_third">
+							<br>
+							<label for="special-requirements">Special Requirements</label>
+							<input type="text" name="special-requirements" placeholder="Enter any special requirements">
+						</div>
+						<div class="one_third">
+							<br>
+							<input class="btn" id="reserveButton" type="submit" name="submit" value="Make Reservation">
+						</div>
+					</div>
+				</form>
+            </div>
+        </div>
+
+        
+        <div class="clear"></div>
+      </main>
+    </div>
+
+
+    <!-- Footer Area -->
+    <div class="bgded overlay" style="background-image:url('../images/backgrounds/footer_bg.jpg');">
+      <footer id="footer" class="hoc clear center"> 
+        <h3 class="heading uppercase">Foodbubble</h3>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </footer>
+      <div id="copyright" class="hoc clear center"> 
+        <p>Copyright &copy; 2018 &mdash; Foodbubble &mdash; All Rights Reserved</p>
+      </div>
+    </div>
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    
+    <!-- JAVASCRIPTS -->
+    <script src="../layout/scripts/jquery.min.js"></script>
+    <script src="../layout/scripts/jquery.backtotop.js"></script>
+    <script src="../layout/scripts/restaurantGallery.js"></script>
+    <script src="../layout/scripts/showreservationpanel.js"></script>
+    <script src="../layout/scripts/stars.js"></script>
+    <script src="../layout/scripts/ballKick.js"></script>
+    <script src="../layout/scripts/ExpectedDeposit.js"></script>
+    <script src="../layout/scripts/formValidation.js"></script>  
+    <script src="../layout/scripts/pageFadeIn.js"></script>
+  </body>
+    
+</html>

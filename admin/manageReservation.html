@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Foodbubble &mdash; Sign In</title>
+    <meta charset="utf-8">
+    <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel='shortcut icon' type='image/x-icon' href='images/Bubble.ico' />
+  </head>
+
+  <body id="top" style = "opacity:0;">
+    <!-- Header Area -->
+    <div class="bgded overlay" style="background-image:url('../images/backgrounds/header_bg.jpg');"> 
+
+      <div class="wrapper">
+        <header id="header" class="hoc clear">
+          <div id="logo">
+                      <div class="../logo-img">
+              <img src="../images/logo.png" class = "ballKick">
+            </div> 
+            <h1>Foodbubble<br>(Admin)</h1>
+          </div>
+          <nav id="mainav" class="clear"> 
+            <ul class="clear">
+              <li><a href="AdminAddNewRestaurant.html">Add New Restaurant</a></li>
+
+              <li><a href="adminsignin.html">Sign In</a></li>
+              <li class="active"><a href="manageReservation.html">Manage Reservation</a></li>
+             
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <!-- Features Area -->
+    <div class="wrapper row3">
+      <section class="hoc container clear"> 
+
+                <div>
+                  <h3>Reservations Control (Admin) </h3>
+                  <br>
+                    <br>
+                  <div class="btmspace-15 ">
+                            <div class=" restaurant-gallery" >
+                                <form id = "ReservationsContainer" class = "ReservationNode" method ="post">
+                                        
+
+                                        <div class = "ClientData">
+                                            
+                                            <br><br>
+                                            <span>Client Name: </span><input type="text" name = "ClientName" value="Abdallah Gaber" readonly> <br>
+                                            <span>Client Email: </span><input type="email" name = "ClientEmail" value="Abdallahgaber15@gmail.com" readonly><br>
+                                            <span>Client Phone: </span><input type="text" name ="ClientNumber" value = "0100 7333 559" readonly> <br>
+                                            <p>Reservation Number: <span>1</span><br></p>
+                                            
+                                            <div class= "submitButton">
+                                        <input type="submit" class = "AcceptButton" value="Accept" readonly >
+                                        <input type="button" class = "RejectButton" onclick="alert('REJECTED!')" value="Reject" readonly>
+                                                </div>
+                                        </div>
+                                        <div class = "restaurantData">
+
+                                            <br><br>
+                                            <span>Restaurant Name: </span><input type ="text" name = "RestaurantName" value = "Frank & Co" readonly><br>
+                                            <span>Reservation Date: </span><input type ="date" name = "ReservationDate"value = "2018-04-20" readonly><br>
+                                            <span>Reservation Time: </span><input type = "time" name = "ReservationTime" value ="21:00:00" readonly><br>
+
+
+                                        </div>
+
+                                        <div class = "restaurantData">
+
+                                            <br><br>
+                                            <span>Table Type: </span><input type ="text" name = "TableType" value = "VIP Table" readonly> <br>
+                                            <span>Number of People: </span><input type ="text" name = "NumberofPeople" value = "4" readonly> <br>
+                                            <span>Special Requirements: </span><input type ="text" name = "SpecialRequirements" value = "Child Chair" readonly> <br>
+
+                                        </div>
+                                   
+                                </form>
+                            </div>
+
+                            <div class=" restaurant-gallery" >
+                                <form id = "ReservationsContainer" class = "ReservationNode" method ="post">
+                                        
+                                        <div class = "ClientData">
+                                            
+                                            <br><br>
+                                            <span>Client Name: </span><input type="text" name = "ClientName" value="Omar Ashraf" readonly> <br>
+                                            <span>Client Email: </span><input type="email" name = "ClientEmail" value="omarashraf@gmail.com" readonly><br>
+                                            <span>Client Phone: </span><input type="text" name ="ClientNumber" value = "0111 6666 777" readonly> <br>
+                                            <p>Reservation Number: <span>2</span><br></p>
+                                            <div class= "submitButton">
+                                        <input type="submit"class = "AcceptButton" value="Accept"  readonly>
+                                        <input type="button" class = "RejectButton" onclick="alert('REJECTED!')" value="Delete" readonly>
+                                                </div>
+                                        </div>
+                                        <div class = "restaurantData">
+
+                                            <br><br>
+                                            <span>Restaurant Name: </span><input type ="text" name = "RestaurantName" value = "Left Bank" readonly><br>
+                                            <span>Reservation Date: </span><input type ="date" name = "ReservationDate"value = "2018-04-15" readonly><br>
+                                            <span>Reservation Time: </span><input type = "time" name = "ReservationTime" value ="19:00:00" readonly><br>
+
+
+                                        </div>
+
+                                        <div class = "restaurantData">
+
+                                            <br><br>
+                                            <span>Table Type: </span><input type ="text" name = "TableType" value = "Window Table" readonly> <br>
+                                            <span>Number of People: </span><input type ="text" name = "NumberofPeople" value = "3" readonly> <br>
+                                            <span>Special Requirements: </span><input type ="text" name = "SpecialRequirements" value = "None" readonly> <br>
+
+                                        </div>
+                                   
+                                </form>
+                            </div>
+                      
+                      
+                  </div>
+                    
+<br><br><br><br>
+                    
+                  
+
+              </div>
+      </section>
+                    <div id = "AdminButton">
+                    <button class="btn medium" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="btn medium" onclick="plusDivs(+1)">&#10095;</button>
+                      
+                      
+                   </div>
+    </div>
+
+
+    <!-- Footer Area -->
+    <div class="bgded overlay" style="background-image:url('../images/backgrounds/footer_bg.jpg');">
+      <footer id="footer" class="hoc clear center"> 
+        <h3 class="heading uppercase">Foodbubble</h3>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </footer>
+      <div id="copyright" class="hoc clear center"> 
+        <p>Copyright &copy; 2018 &mdash; Foodbubble &mdash; All Rights Reserved</p>
+      </div>
+    </div>
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    
+    <!-- JAVASCRIPTS -->
+    <script src="../layout/scripts/jquery.min.js"></script>
+    <script src="../layout/scripts/jquery.backtotop.js"></script>
+    <script src="../layout/scripts/formValidation.js"></script>
+    <script src="../layout/scripts/restaurantGallery.js"></script>  
+    <script src="../layout/scripts/ballKick.js"></script>
+    <script src="../layout/scripts/pageFadeIn.js"></script>
+  </body>
+</html>
